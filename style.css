@@ -1,0 +1,50 @@
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey: hsl(0, 0%, 50%);
+  --color-black: hsl(0, 0%, 7%);
+}
+
+body {
+  background-color: var(--color-yellow);
+}
+p {
+  font-size: 16px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 35px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 320px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  border-radius: 16px;
+  box-shadow: 9px 9px 0px 0px rgba(0, 0, 0, 1);
+}
+.container-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-content h1 {
+  /* font-size: 16px; */
+}
+.container-image {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+.container-image img {
+  /* object-fit: contain; */
+  border-radius: 16px;
+  max-inline-size: 100%;
+}
