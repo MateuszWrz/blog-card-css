@@ -4,11 +4,27 @@
   --color-grey: hsl(0, 0%, 50%);
   --color-black: hsl(0, 0%, 7%);
 }
+@font-face {
+  font-family: "FigtreeExtraBold";
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "FigtreeSemiBold";
+  src: url(assets/fonts/static/Figtree-SemiBold.ttf);
+}
+@font-face {
+  font-family: "FigtreeItalic";
+  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "FigtreeVaribaleFont";
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
 
 body {
   background-color: var(--color-yellow);
 }
-p {
+body p {
   font-size: 16px;
 }
 .attribution {
@@ -22,19 +38,15 @@ p {
 .container {
   display: block;
   margin: 0 auto;
+  min-width: 240px;
   max-width: 320px;
   background-color: var(--color-white);
   border: 1px solid var(--color-black);
   border-radius: 16px;
   box-shadow: 9px 9px 0px 0px rgba(0, 0, 0, 1);
+  margin-top: 200px;
 }
-.container-content {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.container-content h1 {
-  /* font-size: 16px; */
-}
+
 .container-image {
   text-align: center;
   margin: 0 auto;
@@ -44,7 +56,66 @@ p {
   border-radius: 10px;
 }
 .container-image img {
-  /* object-fit: contain; */
   border-radius: 16px;
+  max-inline-size: 100%;
+}
+.container-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-content h2 {
+  font-family: FigtreeSemiBold;
+  font-size: 22px;
+}
+.container-content a {
+  font-family: FigtreeExtraBold;
+  font-size: 22px;
+}
+.date-container p {
+  font-family: FigtreeSemiBold;
+  font-size: 12px;
+  color: var(--color-black);
+}
+.content-container p {
+  color: var(--color-grey);
+  font-family: FigtreeVaribaleFont;
+  font-size: 14px;
+  line-height: 20px;
+}
+a:hover {
+  cursor: pointer;
+}
+.container a:active {
+  color: var(--color-yellow);
+}
+.heading {
+  background-color: var(--color-yellow);
+  max-width: 75px;
+  height: 25px;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.heading h1 {
+  font-family: FigtreeSemiBold;
+  font-size: 13px;
+  padding: 5px;
+  color: var(--color-black);
+}
+
+.author-container {
+  display: flex;
+}
+.author-container p {
+  font-family: FigtreeExtraBold;
+  padding-left: 10px;
+  font-size: 14px;
+  color: var(--color-black);
+}
+.author-container img {
+  padding-top: 7px;
+  height: 30px;
+  width: 30px;
   max-inline-size: 100%;
 }
